@@ -1,0 +1,6 @@
+{
+  "name": "OsonAI",
+  "description": "OsonAI — Uzbektilidagi aqlli dasturlash va hisob-kitob platformasi. Jonli kod muharriri, interaktiv darslar va real vaqtda AI yordamchisi bilan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
