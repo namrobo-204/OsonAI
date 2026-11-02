@@ -1,6 +1,8 @@
 {
-  "name": "OsonAI",
-  "description": "OsonAI — Uzbektilidagi aqlli dasturlash va hisob-kitob platformasi. Jonli kod muharriri, interaktiv darslar va real vaqtda AI yordamchisi bilan.",
-  "requestFramePermissions": [],
+  "name": "OsonAI - Artificial intelligence",
+  "description": "OsonAI — Universal sun'iy intellekt platformasi. ChatGPT va Claude-dan ustun imkoniyatlar: Gems, Projects, Live Code Canvas, Smart Prompt Enhancer, Multilingual Speech va Concept Mindmap.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

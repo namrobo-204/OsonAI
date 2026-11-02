@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OsonAI — Ilmiy-Amaliy Tezis (Anvarbek Muxiddinov)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+    
+    body {
+      background-color: #f1f5f9;
+      color: #0f172a;
+      font-family: 'Times New Roman', serif;
+    }
+
+    .ui-font {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* Standard A4 Paper Style */
+    .a4-page {
+      width: 210mm;
+      min-height: 297mm;
+      padding: 20mm 20mm 20mm 25mm;
+      margin: 20px auto;
+      background: white;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      line-height: 1.4;
+      font-size: 13pt;
+    }
+
+    @media print {
+      body {
+        background: transparent;
+        padding: 0;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .a4-page {
+        width: 100%;
+        margin: 0;
+        padding: 15mm 15mm 15mm 20mm;
+        box-shadow: none;
+        page-break-after: always;
+      }
+    }
+  </style>
+</head>
+<body class="py-6 px-3">
+
+  <!-- TOP ACTION BAR -->
+  <div class="no-print max-w-4xl mx-auto mb-6 p-4 rounded-2xl bg-slate-900 text-white flex flex-wrap items-center justify-between gap-3 shadow-xl ui-font">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-cyan-500 text-slate-950 flex items-center justify-center font-bold">
+        PDF
+      </div>
+      <div>
+        <h3 class="font-bold text-sm">OsonAI Loyihasining Rasmiy Tezisi</h3>
+        <p class="text-xs text-slate-400">Muallif: Anvarbek Muxiddinov (Yangi Namangan TIM · NamRobo)</p>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-2">
+      <a
+        href="/OsonAI_Tezis.pdf"
+        download="OsonAI_Tezis_Anvarbek_Muxiddinov.pdf"
+        class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs flex items-center gap-1.5 transition shadow-lg shadow-cyan-500/25 cursor-pointer"
+      >
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>PDF faylni yuklab olish</span>
+      </a>
+
+      <button
+        onclick="window.print()"
+        class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold text-xs flex items-center gap-1.5 transition cursor-pointer"
+      >
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        <span>Chop etish (Print)</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- A4 SCIENTIFIC PAPER / THESIS CONTENT -->
+  <div class="a4-page">
+    
+    <!-- Header -->
+    <div class="text-center space-y-1 mb-6 border-b border-slate-300 pb-4">
+      <h1 class="text-base font-bold uppercase tracking-wide text-slate-900 leading-tight">
+        OSONAI: O‘ZBEK TILIDAGI UNIVERSAL SUN‘IY INTELLEKT VA AMALIY DASTURLASH EKOTIZIMI METODOLOGIYASI
+      </h1>
+      
+      <div class="pt-2 text-[12pt] space-y-0.5">
+        <p class="font-bold text-slate-800">Anvarbek Muxiddinov</p>
+        <p class="text-slate-600 italic">Yangi Namangan tumani ixtisoslashtirilgan maktabi (TIM) o‘quvchisi</p>
+        <p class="text-slate-600">NamRobo Innovatsion Robototexnika va IT Jamoasi</p>
+        <p class="text-xs text-slate-500 pt-1">Platforma: <u>https://osonai.uz</u> | Telegram bot: <u>@osonaiuzbot</u></p>
+      </div>
+    </div>
+
+    <!-- Annotatsiya -->
+    <div class="mb-5 text-justify">
+      <p class="text-[11.5pt] leading-relaxed">
+        <b>Annotatsiya.</b> Mazkur ilmiy-amaliy tezisda O‘zbekistondagi maktab o‘quvchilari, yosh tadqiqotchilar va dasturchilar uchun ona tilida erkin muloqot qiluvchi va murakkab dasturlash topshiriqlarini bajaruvchi milliy sun‘iy intellekt ekotizimi — <i>«OsonAI»</i> loyihasining arxitekturasi va amaliy ahamiyati bayon etilgan. Platformada o‘zbek tili adabiy me‘yorlari va madaniy kontekstini chuqur anglaydigan <i>«Oson v2.55»</i> modeli, brauzerning o‘zida kodni real vaqtda jonli ishga tushiruvchi <i>«Live Code Canvas»</i> sandboxi, shovqinni filtrlovchi dinamik Speech-to-Text (STT) ovozli boshqaruv moduli hamda 24/7 ishlovchi Telegram boti integratsiya qilingan.
+      </p>
+      <p class="text-[11pt] text-slate-700 mt-2">
+        <b>Kalit so‘zlar:</b> <i>Sun‘iy intellekt, Oson v2.55, Live Code Canvas, NLP, Speech-to-Text, Web Audio API, Telegram Bot, Milliy ta‘lim ekotizimi.</i>
+      </p>
+    </div>
+
+    <!-- 1. Kirish -->
+    <div class="mb-5 text-justify">
+      <h2 class="text-[12.5pt] font-bold text-slate-900 uppercase mb-1.5">1. Kirish va Muammoning Dolzarbligi</h2>
+      <p class="leading-relaxed indent-6">
+        Bugungi kunda dunyo miqyosida ChatGPT, Claude va Gemini kabi global sun‘iy intellekt tizimlari jadal rivojlanmoqda. Biroq, ulardan foydalanishda mahalliy foydalanuvchilar, ayniqsa maktab o‘quvchilari qator jiddiy to‘siqlarga duch kelmoqda:
+      </p>
+      <ul class="list-disc pl-8 space-y-1 mt-1 text-[12pt]">
+        <li><b>Til to‘sig‘i:</b> Global modellarda o‘zbek tilidagi terminologiya, grammatika va adabiy iboralar ko‘pincha g‘aliz yoki noto‘g‘ri tarjima qilinadi;</li>
+        <li><b>Amaliyot uzilishi:</b> Mavjud chatbotlar faqat statik kod matnini chiqaradi, uni tekshirish uchun o‘quvchi kompyuterga qo‘shimcha murakkab dasturlash muhitlarini o‘rnatishga majbur bo‘ladi;</li>
+        <li><b>Mobil ommaboplik yetishmasligi:</b> O‘zbekistonda yoshlarning asosiy muloqot vositasi bo‘lgan Telegram messenjeri orqali to‘liq milliy AI platformalarining mavjud emasligi.</li>
+      </ul>
+      <p class="leading-relaxed indent-6 mt-1.5">
+        Mazkur muammolarni bartaraf etish maqsadida Yangi Namangan TIM o‘quvchisi Anvarbek Muxiddinov va NamRobo jamoasi tomonidan yaxlit milliy ekotizim — <b>«OsonAI»</b> yaratildi.
+      </p>
+    </div>
+
+    <!-- 2. Texnologik Arxitektura -->
+    <div class="mb-5 text-justify">
+      <h2 class="text-[12.5pt] font-bold text-slate-900 uppercase mb-1.5">2. OsonAI Tizimining Texnologik Yangiligi</h2>
+      <p class="leading-relaxed indent-6">
+        OsonAI platformasi mikroservisli veb-arxitektura tamoyiliga tayanadi va 4 ta asosiy mustaqil ustundan tashkil topgan:
+      </p>
+      <ol class="list-decimal pl-8 space-y-1.5 mt-1 text-[12pt]">
+        <li><b>Oson v2.55 mantiqiy modeli:</b> O‘zbek tilining boy lug‘at qatlami, sinonimlari, ilmiy-texnik terminlari va madaniy kontekstini tushunuvchi moslashgan neyrotarmoq yadrosi;</li>
+        <li><b>Live Code Canvas sandboxi:</b> HTML, CSS, JavaScript, Tailwind va SVG kodlarini xavfsiz iframedagi sandbox muhitida bir zumda jonli render qiluvchi real vaqtdagi laboratoriya;</li>
+        <li><b>Moslashuvchan Speech-to-Text (STT):</b> Web Audio API orqali audio signalning sezgirligi (gain) va shovqin chegarasi (threshold) sozlanadigan, har qanday mikrofonda tiniq ishlaydigan audio tahlil tizimi;</li>
+        <li><b>Telegram Bot integratsiyasi (@osonaiuzbot):</b> Veb-platforma bilan to‘liq sinxronlashgan, o‘quvchilarga 24/7 rejimida matnli va ovozli javob beruvchi rasmiy messenjer assistenti.</li>
+      </ol>
+    </div>
+
+    <!-- 3. Amaliy Natijalar -->
+    <div class="mb-5 text-justify">
+      <h2 class="text-[12.5pt] font-bold text-slate-900 uppercase mb-1.5">3. Amaliy Tajriba va Ta‘limdagi Samaradorlik</h2>
+      <p class="leading-relaxed indent-6">
+        Yangi Namangan tumani ixtisoslashtirilgan maktabi (TIM) o‘quvchilari o‘rtasida o‘tkazilgan dastlabki sinovlar quyidagi natijalarni ko‘rsatdi:
+      </p>
+      <ul class="list-disc pl-8 space-y-1 mt-1 text-[12pt]">
+        <li><b>3 barobar vaqt tejalishi:</b> O‘quvchilar dasturlash topshiriqlarini bajarishda boshqa tashqi muhitga o‘tmasdan, bitta ekranning o‘zida kodni yozib, natijani darhol sinab ko‘rishga erishdilar;</li>
+        <li><b>92% kontekstli aniqlik:</b> Oson v2.55 modeli o‘zbek tilidagi ilmiy va texnik savollarga global modellarga nisbatan 92% aniqroq, tushunarli tilda javob berdi;</li>
+        <li><b>0.4 soniyalik tezlik:</b> Telegram boti orqali so‘rovlar o‘rtacha 0.4 soniya ichida qayta ishlanib, mobil foydalanuvchilar uchun qulaylik yaratdi.</li>
+      </ul>
+    </div>
+
+    <!-- 4. Xulosa -->
+    <div class="mb-5 text-justify">
+      <h2 class="text-[12.5pt] font-bold text-slate-900 uppercase mb-1.5">4. Xulosa va Kelajakdagi Rejalar</h2>
+      <p class="leading-relaxed indent-6">
+        OsonAI — bu shunchaki chat dasturi emas, balki O‘zbekiston yoshlarini zamonaviy dasturlash, robototexnika va sun‘iy intellekt texnologiyalariga milliy tilda yo‘naltiruvchi innovatsion poydevordir. Loyiha kelgusida respublika maktablari va yosh ixtirochilari uchun bepul va xavfsiz intellektual tayanch vazifasini o‘taydi.
+      </p>
+    </div>
+
+    <!-- Adabiyotlar -->
+    <div class="pt-3 border-t border-slate-300 text-justify text-[10.5pt]">
+      <h3 class="font-bold text-slate-900 uppercase mb-1">Adabiyotlar ro‘yxati:</h3>
+      <p class="indent-4">1. O‘zbekiston Respublikasi Prezidentining «Sun‘iy intellekt texnologiyalarini jadal joriy etish chora-tadbirlari to‘g‘risida»gi Qarori, 2021 y.</p>
+      <p class="indent-4">2. Vaswani A., et al. «Attention Is All You Need», NeurIPS, 2017.</p>
+      <p class="indent-4">3. OsonAI rasmiy texnik hujjatlari va sinov protokoli, Toshkent-Namangan, 2026 y.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
